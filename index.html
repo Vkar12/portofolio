@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay loop muted play-inline class="back-vid">
+      <source src="img/galaxy.mp4" type="video/mp4" />
+    </video>
+
+    <section class="main-section">
+      <nav>
+        <h1><span style="color: #4acfee">My</span> Portofolio</h1>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-info">
+          <h1>Hi, I'm Fikri Zulfikar</h1>
+          <h2>I'm a Developer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            incidunt, tenetur optio cupiditate, cumque, officia quaerat vero
+            neque quis libero dolore fuga quisquam dolorum sint! Unde facilis
+            dolores cum ducimus!
+          </p>
+          <div class="buttons">
+            <button class="btn">Hire me</button>
+            <ul class="ul-icons">
+              <li>
+                <a href="https://github.com/Vkar12"
+                  ><i class="bx bxl-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/fikri-zulfikar-744866268/"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/vkar12_/"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img class="profil" src="img/profil.png" alt="person-png" />
+        </div>
+      </div>
+
+      <div class="info-sec">
+        <div class="info-card">
+          <h1>4+</h1>
+          <p>Years of <br />Experience</p>
+        </div>
+        <div class="info-card">
+          <h1>7+</h1>
+          <p>Technical <br />Skills</p>
+        </div>
+        <div class="info-card">
+          <h1>50+</h1>
+          <p>Projects<br />Completed</p>
+        </div>
+        <div class="info-card">
+          <h1>80+</h1>
+          <p>Satisfied<br />Clients</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript untuk toggle menu -->
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
