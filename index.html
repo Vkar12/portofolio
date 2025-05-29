@@ -76,20 +76,20 @@
 
       <div class="info-sec">
         <div class="info-card">
-          <h1>4+</h1>
+          <h1>1+</h1>
           <p>Years of <br />Experience</p>
         </div>
         <div class="info-card">
-          <h1>7+</h1>
+          <h1>5+</h1>
           <p>Technical <br />Skills</p>
         </div>
         <div class="info-card">
-          <h1>50+</h1>
+          <h1>10+</h1>
           <p>Projects<br />Completed</p>
         </div>
         <div class="info-card">
-          <h1>80+</h1>
-          <p>Satisfied<br />Clients</p>
+          <h1>2+</h1>
+          <p>Organizational<br />Experience</p>
         </div>
       </div>
 
@@ -184,13 +184,62 @@
           <div class="project-card">
             <img src="img/project.jpg" alt="Project 2" />
             <div class="project-info">
-              <h3>Another Project</h3>
-              <p>HTML, CSS</p>
-              <a href="https://linktodemo2.com" class="demo-btn" target="_blank"
+              <h3>Ternakku</h3>
+              <p>HTML, CSS,JS,Bootstap</p>
+              <a
+                href="https://ternakku-pearl.vercel.app/"
+                class="demo-btn"
+                target="_blank"
                 >Go to Demo</a
               >
             </div>
           </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="container">
+          <div class="card left-card">
+            <img src="img/profil.png" alt="Avatar" class="profile-img" />
+            <h2>Fikri Zulfikar</h2>
+            <p class="job-title">Junior Front End</p>
+            <p class="desc">
+              I am available for freelance or full-time positions. Contact me
+              and let's talk.
+            </p>
+            <p class="connect-title">CONNECT WITH ME</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/fikri-zulfikar-744866268/"
+                ><img src="https://img.icons8.com/color/48/linkedin.png"
+              /></a>
+              <a href="https://github.com/Vkar12"
+                ><img
+                  src="https://img.icons8.com/ios-filled/50/000000/github.png"
+              /></a>
+              <a href="#contact"
+                ><img src="https://img.icons8.com/color/48/gmail"
+              /></a>
+            </div>
+          </div>
+
+          <form
+            action="https://getform.io/f/avrywnma"
+            method="POST"
+            class="card form-card"
+          >
+            <div class="row" id="contact">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="phone" placeholder="Phone Number" />
+            </div>
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+            <input type="hidden" name="time" id="timeInput" />
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </section>
     </section>
@@ -202,6 +251,7 @@
       toggle.addEventListener("click", () => {
         navLinks.classList.toggle("active");
       });
+      document.getElementById("timeInput").value = new Date().toLocaleString();
     </script>
   </body>
 </html>
